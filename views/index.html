@@ -6,23 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Noto+Sans+Kawi&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <title>Sistema</title>
 </head>
 <body>
     <div class="contenedor-principal">
         <div class="titulo-principal">
-            <h1>SWISS KNIFE version0</h1>
+            <div class="ascii">
+                <p>
+                                _                        _            
+                     _ __   ___| |_      _ __  _ __ ___ | |__   ___   
+                    | '_ \ / _ \ __|    | '_ \| '__/ _ \| '_ \ / _ \  
+                    | | | |  __/ |_     | |_) | | | (_) | |_) |  __/  
+                    |_| |_|\___|\__|____| .__/|_|  \___/|_.__/ \___|  
+                                   |____|_|                           
+                </p>
+            </div>
         </div>
-        <div class="contenedor-imagen">
-            
+        <div class="contenedor-iconos-derecha">
+            <img src="/css/media/terminal.svg" alt="" class="terminal">
+        </div>
+        <div class="contenedor-iconos-medio">
+            <img src="/css/media/btv.svg" alt="" class="icono-btv">
+        </div>
+        <div class="contenedor-iconos-izquierda">
+            <img src="/css/media/wifi.svg" alt="" class="wifi">
+
         </div>
         <div class="contenedor-ips">
-            <p>IP Publica ------------------------------> <span class="open-port" id="ip-publica"></span></p>
-            <p>IP Privada ------------------------------> <span class="open-port" id="ip-privada"></span></p>
-            <p>Puerta Enlace --------------------------> <span class="open-port" id="puerta-enlace"></span></p>
-            <p>Mascara de Red ------------------------> <span class="open-port" id="mascara-red"></span></p>
-            <p>Puertos Abiertos -----------------------> <span class="open-port" id="puertos-abiertos"></span></p>
+            <p>IP Publica ----------------------------------------> <span class="open-port" id="ip-publica"></span></p>
+            <p>IP Privada ---------------------------------------> <span class="open-port" id="ip-privada"></span></p>
+            <p>Puerta Enlace ----------------------------------> <span class="open-port" id="puerta-enlace"></span></p>
+            <p>Mascara de Red -------------------------------> <span class="open-port" id="mascara-red"></span></p>
+            <p>Puertos Abiertos -----------------------------> <span class="open-port" id="puertos-abiertos"></span></p>
             <div class="contenedor-botones">
                 <button id="btn" class="btn" role="button">Refrescar</button>
             </div>
