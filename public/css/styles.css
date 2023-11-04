@@ -1,0 +1,99 @@
+/* Estilos generales para la terminal Arch Linux */
+body {
+
+    background-color: #31363b;
+    color: #D8DEE9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor-principal {
+    background-color: #232627;
+    border: 2px solid #169e83;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+/* Estilos para el título de la terminal Arch Linux */
+.titulo-principal {
+    font-family: 'Bitter', serif;
+    background-color: #31363b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px #169e83;
+}
+
+h1 {
+    color: #E5E9F0;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos para la información de la terminal Arch Linux */
+.contenedor-ips {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0 0 3px 3px;
+}
+
+p {
+    font-family: 'Bitter', serif;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Estilos para las líneas de comandos o resultados */
+.command-line {
+    color: #ECEFF4;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.command-result {
+    color: #ECEFF4;
+    margin-bottom: 10px;
+}
+
+/* Estilos para resaltar puertos abiertos */
+.open-port {
+    color: #169e83;
+    font-weight: bold;
+}
+.contenedor-botones{
+    padding: 10px;
+    text-align: center;
+}
+.btn {
+    padding: 5px;
+    background-color: #169e83;
+    border-radius: 5px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: all .3s;
+    white-space: nowrap;
+    width: 150px;
+    margin: 0px 10px;
+    transition: all ease-in-out 200ms;
+  }
+
+.btn:hover{
+    background-color: #12816b;
+    transform: scale(1.01);
+    color: #b9b9b9;
+}
