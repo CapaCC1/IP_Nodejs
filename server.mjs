@@ -27,13 +27,13 @@ app.listen(puerto,ip, () => {
 });
 
 app.get('/get-ip-privada',(req,res) => {
-    const nombreIntefaz = "Ethernet 3";
+    const nombreIntefaz = "eth0";
     const ipPrivada = getIpPrivada(nombreIntefaz);
     res.send(ipPrivada);
 })
 
 app.get('/get-mascara',(req,res) => {
-    const nombreIntefaz = "Ethernet 3";
+    const nombreIntefaz = "eth0";
     const mascaraRed = getMascaraRed(nombreIntefaz);
     res.send(mascaraRed);
 })
