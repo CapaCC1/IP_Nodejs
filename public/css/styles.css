@@ -32,10 +32,6 @@ body {
    
 }
 
-.ascii p:hover{
-    color: rgb(118, 247, 252);
-}
-
 .ascii p{
     color:#a19faf;
     font-size: 8px;
@@ -44,25 +40,8 @@ body {
     transition: all ease-in-out 200ms;
 }
 
-h1 {
-    color: #E5E9F0;
-    font-size: 24px;
-    margin: 0;
-}
-
-/* Estilos para la información de la terminal Arch Linux */
-.contenedor-ips {
-    height: 40%;
-    padding-left: 5px;
-    position: relative;
-    bottom: 6%;
-}
-
-p {
-    font-family: 'Bitter', serif;
-    margin: 0;
-    font-size: 13px;
-    color:#a19faf;
+.ascii p:hover{
+    color: rgb(118, 247, 252);
 }
 
 .contenedor-iconos-derecha{
@@ -107,19 +86,21 @@ p {
     height: 220%;
 }
 
-/* Estilos para las líneas de comandos o resultados */
-.command-line {
-    color: #ECEFF4;
-    font-weight: bold;
-    margin-bottom: 5px;
+.contenedor-ips {
+    height: 40%;
+    padding-left: 5px;
+    position: relative;
+    bottom: 6%;
 }
 
-.command-result {
-    color: #ECEFF4;
-    margin-bottom: 10px;
+p {
+    font-family: 'Bitter', serif;
+    margin: 0;
+    font-size: 13px;
+    color:#a19faf;
 }
 
-.open-port {
+.ips{
     color: rgb(118, 247, 252);
     font-weight: bold;
 }
