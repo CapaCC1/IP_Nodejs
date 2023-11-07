@@ -1,0 +1,28 @@
+npm init -y -> Inicializar proyecto con node
+
+npm install express -E
+
+En package.json agregar "type":"module", -> para los imports
+
+const port = process.env.PORT ?? 3000 -> Variable de entorno para el puerto y sino puerto 3000
+
+const app = express() -> Iniciar servidor express
+
+app.get('/',(req,res)=>{
+	res.send('<h1>Prueba Raiz</h1>')
+}) -> Al entrar al directorio raiz de la web este mostrar la respuesta creada con h1
+
+app.get('/',(req,res)=>{
+	res.sendFile(process.cwd() + /client/index.html)
+})process.cwd(), es la carpeta donde se a inicializado el proyecto y se agrega la ruta de nuestro html
+
+app.listen(port,()=>{
+	console.log(`Servidor escuchando en el puerto ${port}`)
+})
+
+node --watch ./server/index.js -> Permite refrescar automaticamente el servidor
+
+"dev": "node --watch node --watch ./server/index.js" -> Si añadimos esto en scritps de package.json podremos llamarlo con npm run dev desde la consola
+
+req-> request (Requiere datos requeridos por el cliente, req.url, req.body, req.params)
+res-> response (Respuesta que se enviara al cliente)
