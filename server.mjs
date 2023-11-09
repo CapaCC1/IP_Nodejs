@@ -50,8 +50,9 @@ app.get('/get-puerta-enlace',(req,res) => {
       });
 })
 
-app.get('/escanear-puertos',(req,res) => {
-    escanearPuertos('90.94.32.97', [21, 22, 23, 25, 80, 110, 123, 443])
+app.get('/escanear-puertos',async (req,res) => {
+    const ipPublica = await getIpPublica();
+    escanearPuertos(ipPublica, [7445,7446,7447,7448,7449,7450,7451])
     .then(result => {
       console.log(result);
       res.send(result);
@@ -62,6 +63,7 @@ app.get('/escanear-puertos',(req,res) => {
 })
 
 app.get('/get-ip-publica',(req,res) => {
+    
     getIpPublica()
     .then(ip => {
         if (ip) {
